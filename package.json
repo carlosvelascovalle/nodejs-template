@@ -1,0 +1,27 @@
+{
+  "name": "node-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Plantilla base para los proyectos NodeJS",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "lint": "eslint src/**/*.js --fix"
+  },
+  "author": {
+    "name": "Carlos Velasco Valle"
+  },
+  "license": "ISC",
+  "imports": {
+    "#Lib/*": "./src/lib/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.20"
+  }
+}
